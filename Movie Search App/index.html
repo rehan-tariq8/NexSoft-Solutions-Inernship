@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search App</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+
+        <h1>🎬 Movie Explorer</h1>
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search movies...">
+
+            <button id="searchBtn">
+                Search
+            </button>
+
+        </div>
+
+    </header>
+
+    <div id="loader" class="loader hidden"></div>
+
+    <main id="movieContainer"></main>
+
+    <div class="pagination">
+
+        <button id="prevBtn">
+            Previous
+        </button>
+
+        <span id="pageNumber">
+            1
+        </span>
+
+        <button id="nextBtn">
+            Next
+        </button>
+
+    </div>
+
+    <div id="movieModal" class="modal">
+
+        <div class="modal-content">
+
+            <span id="closeModal">&times;</span>
+
+            <div id="movieDetails"></div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
